@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/logo.png" alt="Logo do Smart Control" width="30">
+        <h1>Cadastro de Usuário</h1>
+    </header>
+
+    <form>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required>
+
+        <br><br>
+
+        <label for="email">E-mail Corporativo:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha..."
+            minlength="8"
+            required>
+
+        <br><br>
+
+        <label for="nivel">Nível de Acesso:</label>
+        <select id="nivel" name="nivel" required>
+            <option value="">Selecione</option>
+            <option>Administrador</option>
+            <option>Gerente</option>
+            <option>Funcionário</option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" id="termos" required>
+        <label for="termos">Aceito os Termos de Uso</label>
+
+        <br><br>
+
+        <button>Cadastrar</button>
+
+    </form>
+
+    <br>
+
+    <a href="PaginaInicial.html">Voltar ao Login</a>
+
+    <footer>
+
+        <h3>Sede da Empresa</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            width="400"
+            height="300"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </footer>
+
+</body>
+</html>
