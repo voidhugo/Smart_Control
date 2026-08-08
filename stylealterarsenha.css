@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #b30000, #1f1f1f);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header img{
+    width: 50px;
+}
+
+form{
+    background: rgba(255,255,255,0.35);
+    width: 420px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+form h1{
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: 300;
+    color: #222;
+}
+
+form label{
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    color: #222;
+    font-weight: bold;
+}
+
+form input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+form a[href="dashboard.html"]{
+    display: block;
+    width: 100%;
+    background-color: #ff2d2d;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+form a[href="dashboard.html"]:hover{
+    background-color: #d91d1d;
+}
+
+form a[href="cadastro.html"]{
+    display: block;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form a[href="cadastro.html"]:hover{
+    background-color: #000;
+}
+
+body > a{
+    display: block;
+    width: 220px;
+    margin: 20px auto;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
