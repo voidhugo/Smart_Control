@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
-    
     <link rel="stylesheet" href="styledashboard.css">
 </head>
+
 <body>
+
     <header>
     <h1>SMART CONTROL</h1>
-    <img src="assets/images/logo.png" alt="Logo do Smart Control">
-</header>
 
-<div class="dashboard">
+    <input type="checkbox" id="menu-toggle">
 
-    <aside>
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
         <ul>
             <li><a href="dashboard.html">Início</a></li>
             <li><a href="#">Progressão de Carga</a></li>
@@ -25,61 +31,113 @@
             <li><a href="#">Percentual de Gordura</a></li>
             <li><a href="#">Tempo de Treino</a></li>
         </ul>
-    </aside>
+    </nav>
+
+    <img src="assets/images/logo.png" alt="Logo do Smart Control">
+    </header>
+
 
     <main>
-        <div class="relatorio-card">
-            <h1>Relatório de Acessos Recentes</h1>
-        
 
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Data</th>
-                    <th>Hora</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+        <h2>Painel de Indicadores</h2>
 
-            <tbody>
-                <tr>
-                    <td>João Silva</td>
-                    <td>03/08/2026</td>
-                    <td>08:15</td>
-                    <td>Sucesso</td>
-                </tr>
+        <section class="indicadores">
 
-                <tr>
-                    <td>Maria Souza</td>
-                    <td>03/08/2026</td>
-                    <td>09:40</td>
-                    <td>Sucesso</td>
-                </tr>
+            <div class="card">
+                <h3>Progressão de Carga</h3>
+                <p>42%</p>
+                <span>Últimos 100 dias</span>
+            </div>
 
-                <tr>
-                    <td>Carlos Lima</td>
-                    <td>03/08/2026</td>
-                    <td>10:05</td>
-                    <td>Falha</td>
-                </tr>
+            <div class="card">
+                <h3>Frequência Mensal</h3>
+                <p>88%</p>
+                <span>Últimos 6 meses</span>
+            </div>
 
-                <tr>
-                    <td>Ana Costa</td>
-                    <td>03/08/2026</td>
-                    <td>10:50</td>
-                    <td>Sucesso</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+            <div class="card">
+                <h3>Percentual de Massa</h3>
+                <p>88%</p>
+                <span>Massa muscular</span>
+            </div>
+
+            <div class="card">
+                <h3>Percentual de Gordura</h3>
+                <p>22%</p>
+                <span>Percentual atual</span>
+            </div>
+
+            <div class="card">
+                <h3>Tempo de Treino</h3>
+                <p>665 min</p>
+                <span>Tempo total</span>
+            </div>
+
+        </section>
+
+
+        <section class="relatorio-card">
+
+            <h2>Relatório de Acessos Recentes</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>João Silva</td>
+                        <td>03/08/2026</td>
+                        <td>08:15</td>
+                        <td>Sucesso</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maria Souza</td>
+                        <td>03/08/2026</td>
+                        <td>09:40</td>
+                        <td>Sucesso</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Lima</td>
+                        <td>03/08/2026</td>
+                        <td>10:05</td>
+                        <td>Falha</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Costa</td>
+                        <td>03/08/2026</td>
+                        <td>10:50</td>
+                        <td>Sucesso</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
     </main>
 
+
     <footer>
+
         <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
             Portal Pedro Landia
         </a>
+
     </footer>
 
 </body>
+
 </html>

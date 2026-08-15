@@ -1,71 +1,3 @@
-/* body{
-    background: linear-gradient(to bottom, #b30000, #1f1f1f);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container{
-    width: 85%;
-    max-width: 1000px;
-    margin: 60px auto;
-    background: rgba(255,255,255,0.35);
-    border-radius: 25px;
-    padding: 35px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-.container h1{
-    text-align: center;
-    color: #222;
-    margin-bottom: 30px;
-    font-size: 34px;
-    font-weight: 300;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-thead{
-    background: #ff2d2d;
-    color: white;
-}
-
-th{
-    padding: 15px;
-}
-
-td{
-    background: white;
-    padding: 15px;
-    text-align: center;
-}
-
-tbody tr:nth-child(even){
-    background: #f3f3f3;
-}
-
-tbody tr:hover td{
-    background: #ffe5e5;
-    transition: .3s;
-}
-
-footer{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-footer a{
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover{
-    text-decoration: underline;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -74,137 +6,157 @@ footer a:hover{
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #c40000 0%, #8f1515 45%, #222 100%);
+    background: linear-gradient(to bottom, #b30000, #1f1f1f);
     min-height: 100vh;
-    color: #d8d8d8;
+    color: #222;
 }
 
 header {
-    height: 95px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 25px;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 300;
     letter-spacing: 2px;
     color: #111;
 }
 
 header img {
-    width: 58px;
-    height: 58px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-/* ÁREA PRINCIPAL */
-
-.dashboard {
+nav ul {
     display: flex;
-    min-height: calc(100vh - 95px);
-}
-
-/* MENU LATERAL */
-
-aside {
-    width: 225px;
-    padding: 32px 24px;
-    background: rgba(40, 40, 40, 0.25);
-}
-
-aside ul {
+    gap: 10px;
     list-style: none;
 }
 
-aside li {
-    margin-bottom: 12px;
-}
-
-aside a {
+nav a {
     display: block;
-    padding: 13px 10px;
-    text-align: center;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #3b3b3b, #b8b8b8);
+    color: #eeeeee;
     text-decoration: none;
-    color: #ddd;
-    background: linear-gradient(to right, #3a3a3a, #bdbdbd);
-    border-radius: 7px;
-    font-size: 16px;
-    letter-spacing: 0.5px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-aside a:hover {
+nav a:hover {
     background: #ff2d2d;
     color: white;
 }
 
-/* CONTEÚDO */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background: #222;
+    border-radius: 5px;
+}
 
 main {
-    flex: 1;
-    padding: 38px 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
-/* CARD DA TABELA */
+main > h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #333333;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff2d2d;
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: #aaaaaa;
+}
 
 .relatorio-card {
-    max-width: 950px;
-    margin: 0 auto;
-    background: #333;
-    border: 2px solid #191919;
-    border-radius: 28px;
-    padding: 28px;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.35);
+    margin-top: 1.5rem;
+    background: #333333;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
 }
 
-.relatorio-card h1 {
-    font-size: 27px;
+.relatorio-card h2 {
+    color: white;
     font-weight: 400;
-    margin-bottom: 25px;
-    color: #ddd;
+    margin-bottom: 20px;
 }
-
-/* TABELA */
 
 table {
     width: 100%;
     border-collapse: collapse;
-    overflow: hidden;
-    border-radius: 14px;
 }
 
 thead {
-    background: #ff3038;
+    background-color: #ff2d2d;
+    color: white;
 }
 
 th {
-    padding: 15px;
-    color: white;
-    font-weight: 500;
-    text-align: center;
+    padding: 14px;
 }
 
 td {
     padding: 14px;
     text-align: center;
-    background: #3d3d3d;
-    color: #d7d7d7;
-    border-bottom: 1px solid #505050;
+    background-color: #444444;
+    color: white;
+    border-bottom: 1px solid #555555;
 }
 
 tbody tr:hover td {
-    background: #474747;
+    background-color: #555555;
 }
-
-/* STATUS */
-
-td:last-child {
-    font-weight: bold;
-}
-
-/* RODAPÉ */
 
 footer {
     text-align: center;
@@ -212,10 +164,81 @@ footer {
 }
 
 footer a {
-    color: #eee;
+    color: white;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-icon {
+        display: block;
+        order: 2;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 20px;
+        right: 20px;
+        background: #333333;
+        padding: 15px;
+        border-radius: 15px;
+        z-index: 10;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+    background: linear-gradient(to right, #3b3b3b, #b8b8b8);
+    text-align: center;
+    padding: 12px;
+    }
+
+    nav a:hover {
+        background: #ff2d2d;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block;
+    }
+
+    main {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    main > h2 {
+        font-size: 25px;
+    }
+
+    .relatorio-card {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
 }
