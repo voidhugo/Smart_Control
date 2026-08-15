@@ -211,9 +211,9 @@ footer a:hover {
     }
 
     nav a {
-    background: linear-gradient(to right, #3b3b3b, #b8b8b8);
-    text-align: center;
-    padding: 12px;
+        background: linear-gradient(to right, #444444, #666666);
+        text-align: center;
+        padding: 12px;
     }
 
     nav a:hover {
