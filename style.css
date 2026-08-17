@@ -7,10 +7,11 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #b30000, #1f1f1f);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 20px;
 }
 
 header{
@@ -25,8 +26,9 @@ header img{
 
 form{
     background: rgba(255,255,255,0.35);
-    width: 420px;
-    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
     border-radius: 25px;
     text-align: center;
     border: 1px solid rgba(255,255,255,0.6);
@@ -68,6 +70,7 @@ input{
     border-radius: 10px;
     margin-bottom: 10px;
     outline: none;
+    font-size: 16px;
 }
 
 a{
@@ -79,6 +82,7 @@ a[href="AlterarSenha.html"]{
     text-align: left;
     margin-bottom: 20px;
     color: #333;
+    font-size: 14px;
 }
 
 a[href="dashboard.html"]{
@@ -105,11 +109,13 @@ a[href="cadastro.html"]{
     padding: 12px;
     border-radius: 10px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 a[href="cadastro.html"]:hover{
     background-color: #000;
 }
+
 
 footer{
     position: absolute;
@@ -118,4 +124,69 @@ footer{
 
 footer a{
     color: white;
+    font-size: 14px;
+}
+
+
+/* tablets */
+
+@media (min-width: 600px){
+
+    form{
+        padding: 35px;
+    }
+
+}
+
+/* desktop */
+
+@media (min-width: 900px){
+
+    form{
+        max-width: 420px;
+    }
+
+}
+
+
+
+/*celulares pequenos*/
+
+
+@media (max-width: 380px){
+
+    body{
+        padding: 15px;
+    }
+
+    header{
+        top: 12px;
+        left: 12px;
+    }
+
+    header img{
+        width: 38px;
+    }
+
+    form{
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    form div img{
+        width: 90px;
+        height: 90px;
+    }
+
+    h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        position: static;
+        margin-top: 15px;
+        text-align: center;
+    }
+
 }
