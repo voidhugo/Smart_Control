@@ -2,61 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+    }
+    
+    body{
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #b30000, #1f1f1f);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-header{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-header img{
-    width: 50px;
-}
-
-form{
+    padding: 20px 15px;
+    }
+    
+    
+    form{
+    width: 100%;
+    max-width: 420px;
     background: rgba(255,255,255,0.35);
-    width: 420px;
-    padding: 35px;
-    border-radius: 25px;
+    padding: 25px 20px;
+    border-radius: 22px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     text-align: center;
-}
+    }
 
-form h1{
+    form h1{
     margin-bottom: 25px;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 300;
     color: #222;
-}
-
-form label{
+    }
+    
+    form label{
     display: block;
     text-align: left;
     margin-bottom: 6px;
     margin-top: 12px;
     color: #222;
-    font-weight: bold;
-}
-
-form input{
+    }
+ 
+    form input{
     width: 100%;
     padding: 12px;
-    margin-bottom: 18px;
     border: none;
     border-radius: 10px;
     outline: none;
-}
-
-form a[href="dashboard.html"]{
+    font-size: 16px;
+    margin-bottom: 15px;
+    }
+ 
+    form a[href="dashboard.html"]{
     display: block;
     width: 100%;
     background-color: #ff2d2d;
@@ -67,13 +61,13 @@ form a[href="dashboard.html"]{
     font-weight: bold;
     margin-bottom: 8px;
     transition: 0.3s;
-}
-
-form a[href="dashboard.html"]:hover{
+    }
+    
+    form a[href="dashboard.html"]:hover{
     background-color: #d91d1d;
-}
-
-form a[href="cadastro.html"]{
+    }
+   
+    form a[href="cadastro.html"]{
     display: block;
     width: 100%;
     background-color: #1f1f1f;
@@ -83,34 +77,66 @@ form a[href="cadastro.html"]{
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-}
-
-form a[href="cadastro.html"]:hover{
+    }
+    
+    form a[href="cadastro.html"]:hover{
     background-color: #000;
-}
-
-body > a{
+    }
+ 
+    body > a{
     display: block;
-    width: 220px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 18px;
     padding: 12px;
     text-align: center;
     text-decoration: none;
     background-color: #1f1f1f;
     color: white;
     border-radius: 10px;
-}
-
-footer{
+    }
+    
+    footer{
     margin-top: auto;
-    margin-bottom: 20px;
-}
-
-footer a{
+    padding-top: 20px;
+    text-align: center;
+    }
+    
+    footer a{
     color: white;
     text-decoration: none;
-}
+    font-size: 14px;
+    } 
 
-footer a:hover{
-    text-decoration: underline;
+    /* tablet */
+   
+    @media (min-width: 600px){
+    
+    body{
+    padding: 30px 20px;
+    }
+    
+    form{
+    padding: 35px;
+    border-radius: 25px;
+    }
+    
+    form h1{
+    font-size: 34px;
+    }
+    
+    }
+    
+    /* desktop */
+    
+    @media (min-width: 900px){
+    
+    body{
+    padding: 40px 20px;
+    }
+    
+    form{
+    max-width: 420px;
+    }
+    
 }

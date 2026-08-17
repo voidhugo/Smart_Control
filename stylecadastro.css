@@ -124,3 +124,23 @@ footer iframe{
     border: none;
     border-radius: 15px;
 }
+
+@media (max-width: 380px){
+    body{
+        padding: 20px 15px;
+    }
+    header img{
+        width: 55px;
+        height: 55px;
+    }
+    header h1{
+        font-size: 26px;  
+    }
+    form{
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+    footer iframe{
+        height: 220px;
+    }
+}
