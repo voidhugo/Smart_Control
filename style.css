@@ -189,4 +189,15 @@ footer a{
         text-align: center;
     }
 
+    #boas-vindas{
+    background: linear-gradient(90deg, #b30000, #ff2d2d);
+    color: white;
+    padding: 15px 25px;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
 }
