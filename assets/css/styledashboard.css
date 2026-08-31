@@ -245,4 +245,34 @@ footer a:hover {
     table {
         min-width: 600px;
     }
+
+ .botao-sair {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    color: #000 !important;
+
+    text-decoration: none;
+
+    font-size: 36px;
+
+    transition: 0.2s;
+}
+
+.botao-sair i {
+    color: #000 !important;
+}
+
+.botao-sair:hover {
+    transform: scale(1.15);
+}
 }
