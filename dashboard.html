@@ -7,46 +7,67 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="assets/css/styledashboard.css">
-    
+
     <link rel="stylesheet"
         href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-
-
 </head>
 
 <body>
 
     <header>
-        
-    <h1>SMART CONTROL</h1>
 
-    <input type="checkbox" id="menu-toggle">
+        <h1>SMART CONTROL</h1>
 
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+        <input type="checkbox" id="menu-toggle">
 
-    <nav>
-        <ul>
-            <li><a href="dashboard.html">Início</a></li>
-            <li><a href="ProgressãoCarga.html">Progressão de Carga</a></li>
-            <li><a href="#">Frequência Mensal</a></li>
-            <li><a href="#">Percentual de Massa</a></li>
-            <li><a href="#">Percentual de Gordura</a></li>
-            <li><a href="#">Tempo de Treino</a></li>
-        </ul>
-    </nav>
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-    <img src="assets/images/logo.png" alt="Logo do Smart Control">
+        <nav id="menu-lateral">
+
+            <ul>
+                <li><a href="dashboard.html">Início</a></li>
+                <li><a href="ProgressãoCarga.html">Progressão de Carga</a></li>
+                <li><a href="#">Frequência Mensal</a></li>
+                <li><a href="#">Percentual de Massa</a></li>
+                <li><a href="#">Percentual de Gordura</a></li>
+                <li><a href="#">Tempo de Treino</a></li>
+
+                <li>
+                    <button id="botaoTema" type="button">
+                        <i class="fa-light fa-moon"></i>
+                        Dark Mode
+                    </button>
+                </li>
+            </ul>
+
+        </nav>
+
+        <img src="assets/images/logo.png" alt="Logo do Smart Control">
+
     </header>
-    
+
     <section id="boas-vindas"></section>
 
     <main>
 
         <h2>Painel de Indicadores</h2>
+
+        <!-- CAMPO DE BUSCA -->
+        <div class="area-busca">
+
+            <label for="campoBusca">Buscar acesso:</label>
+
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="Digite um nome..."
+            >
+
+        </div>
 
         <section class="indicadores">
 
@@ -82,7 +103,6 @@
 
         </section>
 
-
         <section class="relatorio-card">
 
             <h2>Relatório de Acessos Recentes</h2>
@@ -90,12 +110,14 @@
             <table>
 
                 <thead>
+
                     <tr>
                         <th>Nome</th>
                         <th>Data</th>
                         <th>Hora</th>
                         <th>Status</th>
                     </tr>
+
                 </thead>
 
                 <tbody>
@@ -140,7 +162,6 @@
         <i class="fa-light fa-arrow-right-from-bracket"></i>
     </a>
 
-
     <footer>
 
         <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
@@ -148,7 +169,9 @@
         </a>
 
     </footer>
+
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

@@ -9,6 +9,10 @@ body {
     background: linear-gradient(to bottom, #b30000, #1f1f1f);
     min-height: 100vh;
     color: #222;
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
 }
 
 header {
@@ -17,6 +21,10 @@ header {
     align-items: center;
     padding: 20px 30px;
     background: rgba(255, 255, 255, 0.15);
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
 }
 
 header h1 {
@@ -33,7 +41,8 @@ header img {
     object-fit: cover;
 }
 
-/* Navegação */
+
+/* NAVEGAÇÃO */
 
 nav ul {
     display: flex;
@@ -74,6 +83,9 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
+/* CONTEÚDO PRINCIPAL */
+
 main {
     width: 90%;
     max-width: 1200px;
@@ -86,6 +98,9 @@ main > h2 {
     margin-bottom: 25px;
     font-size: 30px;
 }
+
+
+/* INDICADORES */
 
 .indicadores {
     display: grid;
@@ -100,6 +115,11 @@ main > h2 {
     border-radius: 20px;
     border: 2px solid #1b1b1b;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .card h3 {
@@ -119,6 +139,9 @@ main > h2 {
     color: #aaaaaa;
 }
 
+
+/* RELATÓRIO */
+
 .relatorio-card {
     margin-top: 1.5rem;
     background: #333333;
@@ -126,6 +149,11 @@ main > h2 {
     border-radius: 20px;
     border: 2px solid #1b1b1b;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .relatorio-card h2 {
@@ -133,6 +161,9 @@ main > h2 {
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+
+/* TABELA */
 
 table {
     width: 100%;
@@ -146,6 +177,11 @@ thead {
 
 th {
     padding: 14px;
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
 }
 
 td {
@@ -154,11 +190,129 @@ td {
     background-color: #444444;
     color: white;
     border-bottom: 1px solid #555555;
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
 }
 
 tbody tr:hover td {
     background-color: #555555;
 }
+
+
+/* CAMPO DE BUSCA */
+
+.area-busca {
+    margin-bottom: 25px;
+}
+
+.area-busca label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.area-busca input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* FILTRO DA TABELA */
+
+.linha-escondida {
+    display: none;
+}
+
+
+/* BOTÃO DARK / LIGHT */
+
+#botaoTema {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+#botaoTema:hover {
+    background: #ff2d2d;
+}
+
+
+/* MENU ABERTO */
+
+.menu-aberto {
+    display: block !important;
+}
+
+
+/* DARK THEME */
+
+body.dark-theme {
+    background: linear-gradient(to bottom, #080808, #1a1a1a);
+    color: white;
+}
+
+body.dark-theme header {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme header h1 {
+    color: white;
+}
+
+body.dark-theme .menu-icon span {
+    background: white;
+}
+
+body.dark-theme .card,
+body.dark-theme .relatorio-card {
+    background: #181818;
+    border-color: #333;
+}
+
+body.dark-theme .area-busca input {
+    background: #252525;
+    color: white;
+}
+
+body.dark-theme .area-busca input::placeholder {
+    color: #aaa;
+}
+
+body.dark-theme td {
+    background-color: #252525;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-theme tbody tr:hover td {
+    background-color: #333;
+}
+
+
+/* RODAPÉ */
 
 footer {
     text-align: center;
@@ -174,7 +328,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Celulares e Tablets */
+
+/* CELULARES E TABLETS */
 
 @media (max-width: 768px) {
 
@@ -192,10 +347,16 @@ footer a:hover {
         height: 45px;
     }
 
+
+    /* ÍCONE DO MENU */
+
     .menu-icon {
         display: block;
         order: 2;
     }
+
+
+    /* MENU MOBILE */
 
     nav {
         display: none;
@@ -224,9 +385,15 @@ footer a:hover {
         background: #ff2d2d;
     }
 
+
+    /* ABRIR MENU PELO CHECKBOX */
+
     #menu-toggle:checked ~ nav {
         display: block;
     }
+
+
+    /* CONTEÚDO MOBILE */
 
     main {
         width: 92%;
@@ -237,6 +404,9 @@ footer a:hover {
         font-size: 25px;
     }
 
+
+    /* TABELA MOBILE */
+
     .relatorio-card {
         padding: 20px;
         overflow-x: auto;
@@ -246,33 +416,11 @@ footer a:hover {
         min-width: 600px;
     }
 
- .botao-sair {
-    position: fixed;
-    bottom: 25px;
-    left: 25px;
 
-    width: 60px;
-    height: 60px;
+    /* CAMPO DE BUSCA MOBILE */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .area-busca input {
+        max-width: 100%;
+    }
 
-    background-color: transparent;
-    color: #000 !important;
-
-    text-decoration: none;
-
-    font-size: 36px;
-
-    transition: 0.2s;
-}
-
-.botao-sair i {
-    color: #000 !important;
-}
-
-.botao-sair:hover {
-    transform: scale(1.15);
-}
 }
