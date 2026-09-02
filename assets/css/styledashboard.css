@@ -423,4 +423,32 @@ footer a:hover {
         max-width: 100%;
     }
 
+    /* Estilo do Botão de Sair (Canto inferior esquerdo) */
+.botao-sair {
+    position: fixed;
+    bottom: 30px; /* Distância do fundo da tela */
+    left: 30px;   /* Distância da lateral esquerda */
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Bordinha sutil */
+    border-radius: 50%; /* Deixa o botão redondo */
+    color: #ffffff; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    
+    /* Centraliza o ícone dentro do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    z-index: 1000; /* Garante que fique por cima dos outros elementos */
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima */
+.botao-sair:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Dá uma leve aumentada */
+}
 }

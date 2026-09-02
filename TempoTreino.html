@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-
+    <title>Tempo de Treino - Smart Control</title>
     <link rel="stylesheet" href="assets/css/styledashboard.css">
-    
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
 </head>
-
 <body>
-
     <header>
-        
-    <h1>SMART CONTROL</h1>
-
-    <input type="checkbox" id="menu-toggle">
-
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-   <nav id="menu-lateral">
+        <h1>SMART CONTROL</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span><span></span><span></span>
+        </label>
+        <nav id="menu-lateral">
             <ul>
                 <li><a href="dashboard.html">Início</a></li>
                 <li><a href="ProgressãoCarga.html">Progressão de Carga</a></li>
@@ -38,93 +28,66 @@
                     </button>
                 </li>
             </ul>
-    </nav>
-
-    <img src="assets/images/logo.png" alt="Logo do Smart Control">
+        </nav>
+        <img src="assets/images/logo.png" alt="Logo do Smart Control">
     </header>
-    
+
     <section id="boas-vindas"></section>
 
     <main>
-
-        <h2>Progressão de Carga</h2>
-
+        <h2>Análise de Tempo de Treino</h2>
+        
         <section class="indicadores">
-
             <div class="card">
-                <h3>Exercícios para Peito</h3>
-                <p>42%</p>
-                <span>Últimos 100 dias</span>
+                <h3>Média Diária</h3>
+                <p>65 min</p>
+                <span>Por treino</span>
             </div>
-
             <div class="card">
-                <h3>Exercícios para Costas</h3>
-                <p>30%</p>
-                <span>Últimos 100 dias</span>
+                <h3>Tempo na Semana</h3>
+                <p>325 min</p>
+                <span>Total acumulado</span>
             </div>
-
             <div class="card">
-                <h3>Exercícios para Pernas</h3>
-                <p>27%</p>
-                <span>Últimos 100 dias</span>
+                <h3>Treino mais Longo</h3>
+                <p>90 min</p>
+                <span>Pernas</span>
             </div>
-
-            <div class="card">
-                <h3>Exercícios para Braços</h3>
-                <p>42%</p>
-                <span>Últimos 100 dias</span>
-            </div>
-
-
         </section>
 
         <section class="relatorio-card">
-
-            <h2>Amplitude de Carga</h2>
-
+            <h2>Duração dos Últimos Treinos</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Grupo Muscular</th>
-                        <th>Carga Inicial</th>
-                        <th>Carga Atual</th>
-                        <th>Amplitude</th>
+                        <th>Data</th>
+                        <th>Treino</th>
+                        <th>Horário de Início</th>
+                        <th>Duração Total</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
-                        <td>Peito</td>
-                        <td>30 kg</td>
-                        <td>42 kg</td>
-                        <td>+12 kg</td>
+                        <td>03/09/2026</td>
+                        <td>Peito e Tríceps</td>
+                        <td>18:30</td>
+                        <td>65 min</td>
                     </tr>
-
                     <tr>
-                        <td>Costas</td>
-                        <td>40 kg</td>
-                        <td>50 kg</td>
-                        <td>+10 kg</td>
+                        <td>02/09/2026</td>
+                        <td>Costas e Bíceps</td>
+                        <td>19:00</td>
+                        <td>70 min</td>
                     </tr>
-
                     <tr>
-                        <td>Pernas</td>
-                        <td>60 kg</td>
-                        <td>80 kg</td>
-                        <td>+20 kg</td>
-                    </tr>
-
-                    <tr>
-                        <td>Braços</td>
-                        <td>20 kg</td>
-                        <td>30 kg</td>
-                        <td>+10 kg</td>
+                        <td>31/08/2026</td>
+                        <td>Pernas e Ombro</td>
+                        <td>18:15</td>
+                        <td>90 min</td>
                     </tr>
                 </tbody>
             </table>
-
         </section>
-
     </main>
 
     <a href="PaginaInicial.html" title="Sair" style="position: fixed; bottom: 30px; left: 30px; width: 60px; height: 60px; background-color: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 255, 255, 0.2); border-radius: 50%; color: #ffffff; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 9999;">
@@ -136,13 +99,9 @@
     </a>
 
     <footer>
-
-        <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
-            Portal Pedro Landia
-        </a>
-
+        <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Portal Pedro Landia</a>
     </footer>
+
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
